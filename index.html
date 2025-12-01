@@ -308,7 +308,7 @@
         @media (max-width: 480px) {
             body { padding: 10px; }
             h1 {
-            font-family: 'Noto Sans TC', sans-serif; /* 加入這行 */
+            font-family: 'Noto Sans TC', sans-serif; 
             text-align: center;
             color: var(--dark-text);
             font-size: 1.8rem;
@@ -371,14 +371,14 @@
 
     <div id="result-modal" onclick="closeModalOnBg(event)">
         <div class="modal-content-wrapper">
-            <h3 style="text-align:center; white-space:pre-line;">手機點選下方按鈕儲存
+            <h3 style="text-align:center; white-space:pre-line;">手機長按儲存
 電腦右鍵儲存</h3>
             <p class="hint"></p>
             <img id="final-image" src="" alt="Generated Image">
             
             <div class="modal-actions">
-                <button id="share-btn" onclick="shareImage()">儲存或分享</button>
-                <button id="close-modal" onclick="closeModal()" class="secondary">重新玩一次</button>
+                <button id="share-btn" onclick="shareImage()">分享圖片</button>
+                <button id="close-modal" onclick="closeModal()" class="secondary">關閉視窗</button>
             </div>
         </div>
     </div>
@@ -397,7 +397,7 @@
             // 更新主標題（頁面大字）
             const mainTitle = document.getElementById("mainTitle");
             if (mainTitle) {
-                mainTitle.innerText = name ? `這是你眼中的 ${name}` : "這是你眼中的";
+                mainTitle.innerText = name ? `這是你眼中的${name}` : "這是你眼中的";
             }
 
             // 更新副標題 (How you see ___)
